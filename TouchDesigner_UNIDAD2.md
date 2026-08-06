@@ -1,4 +1,4 @@
-Intención: Una variación de colores en una imagen que parece respirar
+Intención: Una variación de colores en una imagen que parece respirar (y parpadear)
 Entidades: La imagen original, el noise/displacement, la paleta de colores
 Reglas: La imagen se deforma por el ruido, se cambian los colores.
 Invariantes: La imagen no cambia y siempre es posible reconocerla.
