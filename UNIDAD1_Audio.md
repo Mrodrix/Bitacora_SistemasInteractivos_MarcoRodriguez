@@ -6,3 +6,6 @@ $: note("B3 F#4 B3 F#4 B3 F#4 B3 - G3 D4 G3 D4 F#3 C#4 F#3 C#4 E3 B3 E3 B3 F#3 C
 
 $: note("[B1 G1 F#1 E1 B1 G1 F#1 E1]*2").sound("gm_contrabass")
 
+
+setcpm(100/4)
+melody: note("<a4 d5 a4 d5 e5 c#5 a4 c#5 d5 b4 a4 a4 g4 g4 f#4 e4 d4 d5 a4 d5 e5 c#5 a4 c#5 d5 b4 a4 a4 g4 g4 f#4 e4 d4 d5 a4 d5 e5 c#5 a4 c#5 d5 b4 a4 a4 g4 g4 f#4 e4 d4 d5 a4 d5 e5 c#5 a4 c#5 d5 b4 a4 a4 g4 g4 f#4 e4 d4 f#4@4 g4@4 e4@2 g4@2 f#4@2.5 -@3 f#4@2 g4@3 e4@2 g4 f#4 f#4@2.5 -@3 b4@2 b4@2 c#5@2 c#5@2.5 a4@1.2 f#4@3 -@3 b4@2 b4@2 c#5@2 c#5@2.5 a4@1.2 f#4@4 [b3,d4]@4 [b3,d4]@4 [c#4,e4]@3 f#4 f#4@5 d4@2 [b3,f#4 a4]@4 [c#4,e4]@3 f#4 f#4@5 b3 f#4 b4 a4 f#4@2 f#4 e4 [c#4,e4]@3 f#4 [g#3,b3]@2 b3 c#4 [b3,d4]@2 d4 e4 [b3,d4] c#4 b3 a3 [g#3,b3]@2 g#4 a4 f#4 a4 e4 f#4 b3 c#4 d4 e4 f#4 g#4 a4 b4 [f#4,a4]@4 [f#4,a4]@4 [f#4,a4]@4 [f#4,a4]@4 f#4@4 g4@4 e4@2 g4 f#4 f#4@2.5 -@2 f#4@2 g4@3 f#4 e4 f#4 g4 f#4 f#4@3 -@3 b4@2 b4@2 c#5@2 c#5@2.5 a4@1.2 f#4@4 -@2 b4@2 b4@2 c#5@2 c#5@2.5 b4 a4 f#4@4 [c#4,e4,a4]@4 [d#4,f#4,a4]@4 - b4 e5 b4 e5 f#5 d#5 b4 d#5 e5 c#5 b4 b4 a4 a4 g#4 f#4 e4 e5 b4 e5 f#5 d#5 b4 d#5 e5 c#5 b4 b4 a4 a4 g#4 f#4 e4 [c#4,e4]@4 [c#4,e4]@4 [d#4,f#4]@3 g#4 g#4@5 b3@1.2 [c#4,g#4 b4]@4 [d#4,f#4]@3 g#4 g#4@4 c#4 g#4 c#5 b4 g#4@2 g#4 f#4 [d#4,f#4]@2.5 g#4 [a#3,c#4]@2 c#4 d#4 [c#4,e4]@2 e4 f#4 [c#4,e4] d#4 c#4 b4 [a#4,c#4]@2 e5 f#5 e5 d#5 c#5 b4 c#5@1.5>*8").sound("Piano")
