@@ -6,12 +6,15 @@ const accomp = note("<d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d
 
 const drums = note("< [d3,f#3,a3]@1.5 [d3,a3]@0.5 [f#3,a3]@2  [d3,f#3,a3]@0.7 [d3,f#3,a3]@0.7 [d3,a3]@0.5 [f#3,a3]@2 [d3,f#3,a3]@1.5 [d3,a3]@0.5 [f#3,a3]@2  [d3,f#3,a3]@0.7 [d3,f#3,a3]@0.7 [d3,a3]@0.5 [f#3,a3]@2>*4").sound("bd:2").visualid("drums").gain("0.5")
 
-const guitar = note("<-@144.2 [b3,d4]@4 [b3,d4]@4 [c#4,e4]@3 f#4 f#4@6 d4@2 [b3,f#4 a4]@4 [c#4,e4]@3 f#4 f#4@4 b3 f#4 b4 a4 f#4@2 f#4 e4 [c#4,e4]@3 f#4 [g#3,b3]@2 b3 c#4 [b3,d4]@2 d4 e4 [b3,d4] c#4 b3 a3 [g#3,b3]@6 -@142 [c#4,e4]@4 [c#4,e4]@4 [d#4,f#4]@3 g#4 g#4@6 b3@2 [c#4,g#4 b4]@4 [d#4,f#4]@3 g#4 g#4@4 c#4 g#4 c#5 b4 g#4@2 g#4 f#4 [d#4,f#4]@3 g#4 [a#3,c#4]@2 c#4 d#4 [c#4,e4]@2 e4 f#4 [c#4,e4] d#4 c#4 b4 [a#4,c#4]@8>*8").sound("gm_overdriven_guitar:3").visualid("guitar")
+const guitar = note("<-@144.2 [b3,d4]@4 [b3,d4]@4 [c#4,e4]@3 f#4 f#4@6 d4@2 [b3,f#4 a4]@4 [c#4,e4]@3 f#4 f#4@4 b3 f#4 b4 a4 f#4@2 f#4 e4 [c#4,e4]@3 f#4 [g#3,b3]@2 b3 c#4 [b3,d4]@2 d4 e4 [b3,d4] c#4 b3 a3 [g#3,b3]@2 -@142 [c#4,e4]@4 [c#4,e4]@4 [d#4,f#4]@3 g#4 g#4@6 b3@2 [c#4,g#4 b4]@4 [d#4,f#4]@3 g#4 g#4@4 c#4 g#4 c#5 b4 g#4@2 g#4 f#4 [d#4,f#4]@3 g#4 [a#3,c#4]@2 c#4 d#4 [c#4,e4]@2 e4 f#4 [c#4,e4] d#4 c#4 b4 [a#4,c#4]@6>*8").sound("gm_overdriven_guitar:3").visualid("guitar")
 
-const violin = note("<-@144.2 [b3,d4]@4 [b3,d4]@4 [c#4,e4]@3 f#4 f#4@6 d4@2 [b3,f#4 a4]@4 [c#4,e4]@3 f#4 f#4@4 b3 f#4 b4 a4 f#4@2 f#4 e4 [c#4,e4]@3 f#4 [g#3,b3]@2 b3 c#4 [b3,d4]@2 d4 e4 [b3,d4] c#4 b3 a3 [g#3,b3]@6 -@142 [c#4,e4]@4 [c#4,e4]@4 [d#4,f#4]@3 g#4 g#4@6 b3@2 [c#4,g#4 b4]@4 [d#4,f#4]@3 g#4 g#4@4 c#4 g#4 c#5 b4 g#4@2 g#4 f#4 [d#4,f#4]@3 g#4 [a#3,c#4]@2 c#4 d#4 [c#4,e4]@2 e4 f#4 [c#4,e4] d#4 c#4 b4 [a#4,c#4]@8>*8").sound("gm_violin:2").visualid("violin")
+const violin = note("<-@144.2 [b3,d4]@4 [b3,d4]@4 [c#4,e4]@3 f#4 f#4@6 d4@2 [b3,f#4 a4]@4 [c#4,e4]@3 f#4 f#4@4 b3 f#4 b4 a4 f#4@2 f#4 e4 [c#4,e4]@3 f#4 [g#3,b3]@2 b3 c#4 [b3,d4]@2 d4 e4 [b3,d4] c#4 b3 a3 [g#3,b3]@2 -@142 [c#4,e4]@4 [c#4,e4]@4 [d#4,f#4]@3 g#4 g#4@6 b3@2 [c#4,g#4 b4]@4 [d#4,f#4]@3 g#4 g#4@4 c#4 g#4 c#5 b4 g#4@2 g#4 f#4 [d#4,f#4]@3 g#4 [a#3,c#4]@2 c#4 d#4 [c#4,e4]@2 e4 f#4 [c#4,e4] d#4 c#4 b4 [a#4,c#4]@6>*8").sound("gm_violin:2").visualid("violin")
+
+const horn = note("<>*8").sound("gm_french_horn").visualid("horn")
 
 $melody: stack(melody,melody.osc())
 $accomp: stack(accomp,accomp.osc())
 $drums: stack (drums, drums.osc())
 $guitar: stack (guitar, guitar.osc())
 $violin: stack (violin, violin.osc())
+$horn: stack (horn, horn.osc())
