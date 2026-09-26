@@ -4,6 +4,14 @@ const melody = note("<-@15 a4 d5 a4 d5 e5 c#5 a4 c#5 d5 b4 a4 a4 g4 g4 f#4 e4 d4
 
 const accomp = note("<d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 [b2, f#3]@4 [g2,g3]@4 [a2,a3]@4 [d3,a3]@2 c#3@2 [b2,f#3]@4 [g2,g3]@4 [a2,a3]@4 [d3,a3]@2 c#3@2 [b2,f#3]@4 [f#2,c#3,f#3]@4 [a2,a3]@4 [e2,e3]@4 g2@3 d3 g3@4 e2@3 b2 e3@4 e2@3 b2 e3@4 d3@4 c#3@3 a3 b3@3 a3 d3@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 d3@3 f#3 [a3,d4]@4 b2 b3 b2 b3 b2 b3 b2 b3 b2 b3 b2 b3 b2 b3 b2@2 e3@3 g#3 [b3,e4]@4 e3@3 g#3 [b3,e4]@4 e3@3 g#3 [b3,e4]@4 e3@3 g#3 [b3,e4]@4 [c#3,g#3]@4 [a2,a3]@4 [b2,b3]@4 [e3,b3]@2 d#3@2 [c#3,g#3]@4 [a2,a3]@4 [b2,b3]@4 [e3,b3]@2 d#3@2 [c#3,g#3]@4 [g#2,d#3,g#3]@4 [b2,b3]@4 [f#2,f#3]@4 a2@3 e3 a3@4 f#2@3 c#3 f#3@4 f#2@3 c#3 f#3@4 f#2@3 c#3 f#3@4 e3@3 g#3 [b3,e4]@4 e3@3 g#3 [b3,e4]@4 a3 g#3 f#3 e3 e2@10>*8").sound("Piano").visualid("accomp")
 
+const drums = note("< [d3,f#3,a3]@1.5 [d3,a3]@0.5 [f#3,a3]@2  [d3,f#3,a3]@0.7 [d3,f#3,a3]@0.7 [d3,a3]@0.5 [f#3,a3]@2 [d3,f#3,a3]@1.5 [d3,a3]@0.5 [f#3,a3]@2  [d3,f#3,a3]@0.7 [d3,f#3,a3]@0.7 [d3,a3]@0.5 [f#3,a3]@2>*4").sound("bd:2").visualid("drums").gain("0.5")
+
+const guitar = note("<-@144.2 [b3,d4]@4 [b3,d4]@4 [c#4,e4]@3 f#4 f#4@6 d4@2 [b3,f#4 a4]@4 [c#4,e4]@3 f#4 f#4@4 b3 f#4 b4 a4 f#4@2 f#4 e4 [c#4,e4]@3 f#4 [g#3,b3]@2 b3 c#4 [b3,d4]@2 d4 e4 [b3,d4] c#4 b3 a3 [g#3,b3]@2 -@142 [c#4,e4]@4 [c#4,e4]@4 [d#4,f#4]@3 g#4 g#4@6 b3@2 [c#4,g#4 b4]@4 [d#4,f#4]@3 g#4 g#4@4 c#4 g#4 c#5 b4 g#4@2 g#4 f#4 [d#4,f#4]@3 g#4 [a#3,c#4]@2 c#4 d#4 [c#4,e4]@2 e4 f#4 [c#4,e4] d#4 c#4 b4 [a#4,c#4]@2>*8").sound("gm_overdriven_guitar:3").visualid("guitar")
+
+const violin = note("<-@144.2 [b3,d4]@4 [b3,d4]@4 [c#4,e4]@3 f#4 f#4@6 d4@2 [b3,f#4 a4]@4 [c#4,e4]@3 f#4 f#4@4 b3 f#4 b4 a4 f#4@2 f#4 e4 [c#4,e4]@3 f#4 [g#3,b3]@2 b3 c#4 [b3,d4]@2 d4 e4 [b3,d4] c#4 b3 a3 [g#3,b3]@2 -@142 [c#4,e4]@4 [c#4,e4]@4 [d#4,f#4]@3 g#4 g#4@6 b3@2 [c#4,g#4 b4]@4 [d#4,f#4]@3 g#4 g#4@4 c#4 g#4 c#5 b4 g#4@2 g#4 f#4 [d#4,f#4]@3 g#4 [a#3,c#4]@2 c#4 d#4 [c#4,e4]@2 e4 f#4 [c#4,e4] d#4 c#4 b4 [a#4,c#4]@2>*8").sound("gm_violin:2").visualid("violin")
+
 $melody: stack(melody,melody.osc())
 $accomp: stack(accomp,accomp.osc())
-
+$drums: stack (drums, drums.osc())
+$guitar: stack (guitar, guitar.osc())
+$violin: stack (violin, violin.osc())
